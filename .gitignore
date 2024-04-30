@@ -1,0 +1,7 @@
+*.o
+*.obj
+*~
+zig-cache/
+zig-out/
+*.xz
+main
