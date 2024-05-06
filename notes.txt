@@ -1,6 +1,0 @@
-// zig build-exe main.zig -lc -isystem "C:\path\to\llvm-source\include" -L "C:\Program Files\LLVM\lib"
-// C:\llvm-src\llvm\llvm\include    C:/llvm-src/llvm/llvm/include/
-// C:/llvm-src/llvm/llvm/lib
-// LINUX: \\wsl.localhost\Ubuntu\usr\lib\llvm-14
-
-zig build-exe main.zig -lc++ -I/usr/lib/llvm-14/include -L/usr/lib/llvm-14/lib -lLLVM-14
