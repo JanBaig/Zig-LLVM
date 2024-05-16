@@ -14,7 +14,7 @@ zig build-exe -OReleaseFast main.zig helper.ll
 ```
 
 Without the `-O3` and `-OReleaseFast` the files will be much bigger
-because they will inckude debug information. You can remove the debug
+because they will include debug information. You can remove the debug
 information from the `.ll` file with:
 ```bash
 opt input.ll -strip-debug -o output.ll -S 
