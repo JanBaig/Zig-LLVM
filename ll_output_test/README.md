@@ -19,6 +19,6 @@ information from the `.ll` file with:
 ```bash
 opt input.ll -strip-debug -o output.ll -S 
 ```
-{::comment}OR use -fstrip{:/comment}
+<!-- OR use -fstrip -->
 
 
