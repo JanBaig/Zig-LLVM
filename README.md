@@ -16,4 +16,13 @@ clang -c add.ll -o add.o
 zig build-exe main.zig add.o -femit-bin=main 
 ./main.o
 ```
+The `ll_output_test` folder contains a simple .c and .zig file. In order to link the two together, execute:
 
+```
+clang -O3 -S -emit-llvm helper.c -o helper.ll
+llc -filetype=obj helper.ll -o helper.o 
+zig cc -c helper.ll -o helper.o
+zig build-obj main.zig -O ReleaseSmall -lc
+zig cc -o main main.o helper.o -lc
+./main
+```
